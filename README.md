@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ToolHub — Free Online Tools for Work & Life
 
-## Getting Started
+A multi-tool SEO website with 5 free online tools. All tools are 100% client-side, require no signup, and are AdSense-ready.
 
-First, run the development server:
+## Setup
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build & Lint
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build      # production build
+npm run lint       # ESLint
+npx tsc --noEmit   # TypeScript check
+```
 
-## Learn More
+## Deployment (Vercel)
 
-To learn more about Next.js, take a look at the following resources:
+1. Push to GitHub
+2. Import project at vercel.com
+3. Click Deploy (zero config required)
+4. Add your custom domain in the Vercel dashboard
+5. Update `toolhub.io` → your domain in `src/lib/seo.ts`, `src/lib/schema.ts`, `src/app/layout.tsx`, `src/app/sitemap.ts`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Environment Variables
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+None required. All tools are client-side.
 
-## Deploy on Vercel
+## All Routes (35+ pages)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+| Route | Description |
+|---|---|
+| `/` | Homepage |
+| `/about` | About page |
+| `/contact` | Contact page |
+| `/privacy` | Privacy Policy |
+| `/terms` | Terms of Service |
+| `/freelance-rate-calculator` | Main calculator |
+| `/freelance-rate-calculator/for-designers` | Designer variant |
+| `/freelance-rate-calculator/for-developers` | Developer variant |
+| `/freelance-rate-calculator/for-writers` | Writer variant |
+| `/invoice-generator` | Main invoice generator |
+| `/invoice-generator/for-freelancers` | Freelancer variant |
+| `/invoice-generator/for-consultants` | Consultant variant |
+| `/business-name-generator` | Main generator |
+| `/business-name-generator/[industry]` | 20 industry pages |
+| `/password-generator` | Password generator |
+| `/word-counter` | Main word counter |
+| `/word-counter/for-twitter` | Twitter variant |
+| `/word-counter/for-instagram-bio` | Instagram variant |
+| `/word-counter/for-college-essay` | College essay variant |
+| `/sitemap.xml` | Auto-generated sitemap |
+| `/robots.txt` | Auto-generated robots.txt |
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Tools
+
+1. **Freelance Rate Calculator** — Calculate hourly/daily/monthly rates from income goals
+2. **Invoice Generator** — Create professional PDF invoices (jsPDF, localStorage persistence)
+3. **Business Name Generator** — 20 industry-specific name ideas with domain check links
+4. **Password Generator** — Cryptographically secure passwords (crypto.getRandomValues)
+5. **Word & Character Counter** — Words, characters, reading time, top words, platform presets
+
+## Tech Stack
+
+- Next.js 16 (App Router, Turbopack)
+- TypeScript (strict)
+- Tailwind CSS v4
+- jsPDF (invoice PDF export)
+- lucide-react (icons)
+- clsx (classNames)
+
+## Next Steps (Post-Launch)
+
+- Replace `toolhub.io` with your actual domain (project-wide find & replace)
+- Replace placeholder images in `public/` (og-image.png, apple-touch-icon.png)
+- Register Google Search Console & submit sitemap
+- Apply for Google AdSense (add code to `src/components/ui/AdSlot.tsx`)
+- Add Google Analytics 4 script to `src/app/layout.tsx`
