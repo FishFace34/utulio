@@ -59,3 +59,20 @@ export function parseNum(value: string | number): number {
   const n = typeof value === 'string' ? parseFloat(value) : value;
   return isFinite(n) ? n : 0;
 }
+
+export function daysBetween(date1: Date, date2: Date): number {
+  const msPerDay = 1000 * 60 * 60 * 24;
+  return Math.round(Math.abs(date2.getTime() - date1.getTime()) / msPerDay);
+}
+
+export function formatDate(date: Date): string {
+  return new Intl.DateTimeFormat('en-US', {
+    year: 'numeric', month: 'long', day: 'numeric',
+  }).format(date);
+}
+
+export function addMonths(date: Date, months: number): Date {
+  const d = new Date(date);
+  d.setMonth(d.getMonth() + months);
+  return d;
+}

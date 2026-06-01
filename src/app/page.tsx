@@ -6,19 +6,19 @@ import { websiteSchema, organizationSchema, jsonLdScript } from '@/lib/schema';
 import type { Tool } from '@/types';
 
 export const metadata: Metadata = {
-  title: 'Utulio — 20 Free Online Tools for Work & Life',
+  title: 'Utulio — 50 Free Online Tools for Work & Life',
   description:
-    'Free, fast, no-signup online tools. Finance calculators, developer utilities, freelance tools — 20 tools built for freelancers, developers, and small businesses.',
+    'Free, fast, no-signup online tools. Finance calculators, developer utilities, freelance tools — 50 tools built for freelancers, developers, and small businesses.',
   alternates: { canonical: '/' },
 };
 
 const CATEGORY_SECTIONS: { key: Tool['category']; label: string; desc: string }[] = [
-  { key: 'finance', label: 'Finance Tools', desc: 'Calculators for loans, investments, business math, and salary.' },
+  { key: 'finance', label: 'Finance Tools', desc: 'Mortgage, loan, retirement, tax, and salary calculators.' },
+  { key: 'business', label: 'Business Tools', desc: 'Name generators, quotes, receipts, POs, and pricing calculators.' },
   { key: 'freelancer', label: 'Freelancer Tools', desc: 'Rate calculators and invoice generators for independent professionals.' },
-  { key: 'business', label: 'Business Tools', desc: 'Name generators and business planning utilities.' },
-  { key: 'developer', label: 'Developer Tools', desc: 'JSON formatter, regex tester, encoders, and color utilities.' },
-  { key: 'utility', label: 'Utility Tools', desc: 'QR codes, word counter, aspect ratio, and everyday helpers.' },
-  { key: 'student', label: 'Student Tools', desc: 'Grade calculators and academic utilities.' },
+  { key: 'developer', label: 'Developer Tools', desc: 'JSON formatter, JWT decoder, hash generator, regex tester, and more.' },
+  { key: 'utility', label: 'Utility Tools', desc: 'Unit converter, BMI, TDEE, time zones, age calculator, and more.' },
+  { key: 'student', label: 'Student Tools', desc: 'GPA, grade, citation, Pomodoro timer, and academic utilities.' },
 ];
 
 export default function HomePage() {

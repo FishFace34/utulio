@@ -3,32 +3,28 @@ import {
   Calculator, FileText, Briefcase, Lock, Type,
   Landmark, TrendingDown, LineChart, Percent, Scale, Car, TrendingUp, Clock,
   Braces, SearchCode, Binary, Palette, QrCode, GraduationCap, Ratio,
+  Tag, Receipt, ClipboardList, FileCheck,
+  Home, Wallet, PiggyBank, UtensilsCrossed, Target, ShoppingCart,
+  KeyRound, Square, CalendarClock, Fingerprint, Hash, GitCompare, FileCode,
+  Cake, CalendarDays, ArrowLeftRight, Activity, Flame, Globe, Dices, Shuffle,
+  BookOpen, Quote, Users, Timer,
 } from 'lucide-react';
 import Card from './Card';
 import Badge from './Badge';
 import type { Tool } from '@/types';
 
+// lucide-react doesn't export PercentCircle — map it to Percent
+const PercentCircle = Percent;
+
 const ICON_MAP: Record<string, React.ComponentType<{ size?: number; strokeWidth?: number; className?: string }>> = {
-  Calculator,
-  FileText,
-  Briefcase,
-  Lock,
-  Type,
-  Landmark,
-  TrendingDown,
-  LineChart,
-  Percent,
-  Scale,
-  Car,
-  TrendingUp,
-  Clock,
-  Braces,
-  SearchCode,
-  Binary,
-  Palette,
-  QrCode,
-  GraduationCap,
-  Ratio,
+  Calculator, FileText, Briefcase, Lock, Type,
+  Landmark, TrendingDown, LineChart, Percent, Scale, Car, TrendingUp, Clock,
+  Braces, SearchCode, Binary, Palette, QrCode, GraduationCap, Ratio,
+  Tag, Receipt, ClipboardList, FileCheck,
+  Home, Wallet, PiggyBank, UtensilsCrossed, Target, ShoppingCart,
+  KeyRound, Square, CalendarClock, Fingerprint, Hash, GitCompare, FileCode,
+  Cake, CalendarDays, ArrowLeftRight, Activity, Flame, Globe, Dices, Shuffle,
+  BookOpen, Quote, Users, Timer, PercentCircle,
 };
 
 interface ToolCardProps {

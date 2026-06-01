@@ -5,8 +5,7 @@ export const TOOLS: Tool[] = [
   {
     id: 'freelance-rate-calculator',
     name: 'Freelance Rate Calculator',
-    description:
-      'Calculate your ideal hourly, daily, and monthly freelance rate based on your income goals and expenses.',
+    description: 'Calculate your ideal hourly, daily, and monthly freelance rate based on your income goals and expenses.',
     href: '/freelance-rate-calculator',
     category: 'freelancer',
     icon: 'Calculator',
@@ -15,8 +14,7 @@ export const TOOLS: Tool[] = [
   {
     id: 'invoice-generator',
     name: 'Invoice Generator',
-    description:
-      'Create professional invoices in seconds. Download as PDF instantly — no signup required.',
+    description: 'Create professional invoices in seconds. Download as PDF instantly — no signup required.',
     href: '/invoice-generator',
     category: 'freelancer',
     icon: 'FileText',
@@ -27,20 +25,54 @@ export const TOOLS: Tool[] = [
   {
     id: 'business-name-generator',
     name: 'Business Name Generator',
-    description:
-      'Generate creative, brandable business names instantly for any industry. 1000+ unique combinations.',
+    description: 'Generate creative, brandable business names instantly for any industry. 1000+ unique combinations.',
     href: '/business-name-generator',
     category: 'business',
     icon: 'Briefcase',
     keywords: ['business name generator', 'company name ideas', 'brand name generator'],
+  },
+  {
+    id: 'markup-calculator',
+    name: 'Markup Calculator',
+    description: 'Calculate markup percentage, selling price, and profit from cost. Shows resulting margin too.',
+    href: '/markup-calculator',
+    category: 'business',
+    icon: 'Tag',
+    keywords: ['markup calculator', 'selling price calculator', 'retail markup'],
+  },
+  {
+    id: 'receipt-generator',
+    name: 'Receipt Generator',
+    description: 'Create professional receipts and download as PDF. Free, no signup required.',
+    href: '/receipt-generator',
+    category: 'business',
+    icon: 'Receipt',
+    keywords: ['receipt generator', 'free receipt maker', 'pdf receipt'],
+  },
+  {
+    id: 'purchase-order-generator',
+    name: 'Purchase Order Generator',
+    description: 'Create professional purchase orders and download as PDF. Free PO template.',
+    href: '/purchase-order-generator',
+    category: 'business',
+    icon: 'ClipboardList',
+    keywords: ['purchase order generator', 'po template', 'purchase order pdf'],
+  },
+  {
+    id: 'quote-generator',
+    name: 'Quote / Estimate Generator',
+    description: 'Create professional price quotes and estimates. Download as PDF. Free for any business.',
+    href: '/quote-generator',
+    category: 'business',
+    icon: 'FileCheck',
+    keywords: ['quote generator', 'estimate generator', 'price quote template'],
   },
 
   // ── Finance ──────────────────────────────────────────────────────────────
   {
     id: 'loan-payment-calculator',
     name: 'Loan Payment Calculator',
-    description:
-      'Calculate monthly loan payments, total interest, and full amortization schedule for any loan.',
+    description: 'Calculate monthly loan payments, total interest, and full amortization schedule for any loan.',
     href: '/loan-payment-calculator',
     category: 'finance',
     icon: 'Landmark',
@@ -49,8 +81,7 @@ export const TOOLS: Tool[] = [
   {
     id: 'debt-payoff-calculator',
     name: 'Debt Payoff Calculator',
-    description:
-      'Compare snowball vs avalanche strategies to become debt-free faster and save on interest.',
+    description: 'Compare snowball vs avalanche strategies to become debt-free faster and save on interest.',
     href: '/debt-payoff-calculator',
     category: 'finance',
     icon: 'TrendingDown',
@@ -59,8 +90,7 @@ export const TOOLS: Tool[] = [
   {
     id: 'compound-interest-calculator',
     name: 'Compound Interest Calculator',
-    description:
-      'See how your savings grow with compound interest and regular contributions over time.',
+    description: 'See how your savings grow with compound interest and regular contributions over time.',
     href: '/compound-interest-calculator',
     category: 'finance',
     icon: 'LineChart',
@@ -69,8 +99,7 @@ export const TOOLS: Tool[] = [
   {
     id: 'profit-margin-calculator',
     name: 'Profit Margin Calculator',
-    description:
-      'Calculate gross profit, profit margin percentage, and markup for any product or service.',
+    description: 'Calculate gross profit, profit margin percentage, and markup for any product or service.',
     href: '/profit-margin-calculator',
     category: 'finance',
     icon: 'Percent',
@@ -79,8 +108,7 @@ export const TOOLS: Tool[] = [
   {
     id: 'break-even-calculator',
     name: 'Break-Even Calculator',
-    description:
-      'Find your break-even point in units and revenue. Essential analysis for any small business.',
+    description: 'Find your break-even point in units and revenue. Essential analysis for any small business.',
     href: '/break-even-calculator',
     category: 'finance',
     icon: 'Scale',
@@ -89,8 +117,7 @@ export const TOOLS: Tool[] = [
   {
     id: 'car-loan-calculator',
     name: 'Car Loan Calculator',
-    description:
-      'Calculate car loan payments including down payment, trade-in value, and sales tax.',
+    description: 'Calculate car loan payments including down payment, trade-in value, and sales tax.',
     href: '/car-loan-calculator',
     category: 'finance',
     icon: 'Car',
@@ -99,8 +126,7 @@ export const TOOLS: Tool[] = [
   {
     id: 'roi-calculator',
     name: 'ROI Calculator',
-    description:
-      'Calculate return on investment and annualized ROI (CAGR) for any investment or business decision.',
+    description: 'Calculate return on investment and annualized ROI (CAGR) for any investment or business decision.',
     href: '/roi-calculator',
     category: 'finance',
     icon: 'TrendingUp',
@@ -109,20 +135,72 @@ export const TOOLS: Tool[] = [
   {
     id: 'salary-to-hourly-calculator',
     name: 'Salary to Hourly Calculator',
-    description:
-      'Convert annual salary to hourly, daily, weekly, and monthly pay — and back. Instant results.',
+    description: 'Convert annual salary to hourly, daily, weekly, and monthly pay — and back. Instant results.',
     href: '/salary-to-hourly-calculator',
     category: 'finance',
     icon: 'Clock',
     keywords: ['salary to hourly', 'hourly to salary', 'salary calculator'],
+  },
+  {
+    id: 'mortgage-calculator',
+    name: 'Mortgage Calculator',
+    description: 'Calculate monthly mortgage payment including principal, interest, taxes, insurance, and PMI.',
+    href: '/mortgage-calculator',
+    category: 'finance',
+    icon: 'Home',
+    keywords: ['mortgage calculator', 'home loan calculator', 'monthly mortgage payment'],
+  },
+  {
+    id: 'take-home-pay-calculator',
+    name: 'Take-Home Pay Calculator',
+    description: 'Estimate your net take-home pay after federal tax, state tax, and deductions.',
+    href: '/take-home-pay-calculator',
+    category: 'finance',
+    icon: 'Wallet',
+    keywords: ['take home pay calculator', 'paycheck calculator', 'net salary calculator'],
+  },
+  {
+    id: 'retirement-calculator',
+    name: 'Retirement Calculator',
+    description: 'Calculate how much you will have at retirement based on contributions and investment returns.',
+    href: '/retirement-calculator',
+    category: 'finance',
+    icon: 'PiggyBank',
+    keywords: ['retirement calculator', 'retirement savings', '401k calculator'],
+  },
+  {
+    id: 'tip-calculator',
+    name: 'Tip Calculator',
+    description: 'Calculate tips and split the bill between any number of people. Fast and mobile-friendly.',
+    href: '/tip-calculator',
+    category: 'finance',
+    icon: 'UtensilsCrossed',
+    keywords: ['tip calculator', 'bill split calculator', 'gratuity calculator'],
+  },
+  {
+    id: 'savings-goal-calculator',
+    name: 'Savings Goal Calculator',
+    description: 'Find out how much to save each month to reach your goal, or when you will reach it.',
+    href: '/savings-goal-calculator',
+    category: 'finance',
+    icon: 'Target',
+    keywords: ['savings goal calculator', 'savings calculator', 'how much to save'],
+  },
+  {
+    id: 'sales-tax-calculator',
+    name: 'Sales Tax Calculator',
+    description: 'Add or remove sales tax from any price. Supports reverse tax calculation.',
+    href: '/sales-tax-calculator',
+    category: 'finance',
+    icon: 'ShoppingCart',
+    keywords: ['sales tax calculator', 'tax calculator', 'reverse sales tax'],
   },
 
   // ── Developer ────────────────────────────────────────────────────────────
   {
     id: 'json-formatter',
     name: 'JSON Formatter & Validator',
-    description:
-      'Format, validate, and minify JSON instantly. Private — runs entirely in your browser.',
+    description: 'Format, validate, and minify JSON instantly. Private — runs entirely in your browser.',
     href: '/json-formatter',
     category: 'developer',
     icon: 'Braces',
@@ -131,8 +209,7 @@ export const TOOLS: Tool[] = [
   {
     id: 'regex-tester',
     name: 'Regex Tester',
-    description:
-      'Test regular expressions in real-time with live match highlighting and capture group display.',
+    description: 'Test regular expressions in real-time with live match highlighting and capture group display.',
     href: '/regex-tester',
     category: 'developer',
     icon: 'SearchCode',
@@ -150,8 +227,7 @@ export const TOOLS: Tool[] = [
   {
     id: 'color-converter',
     name: 'Color Converter',
-    description:
-      'Convert colors between HEX, RGB, HSL, and CMYK with a live preview swatch. Free tool.',
+    description: 'Convert colors between HEX, RGB, HSL, and CMYK with a live preview swatch. Free tool.',
     href: '/color-converter',
     category: 'developer',
     icon: 'Palette',
@@ -160,20 +236,81 @@ export const TOOLS: Tool[] = [
   {
     id: 'password-generator',
     name: 'Password Generator',
-    description:
-      'Generate strong, cryptographically secure passwords. Customizable length and character sets.',
+    description: 'Generate strong, cryptographically secure passwords. Customizable length and character sets.',
     href: '/password-generator',
     category: 'developer',
     icon: 'Lock',
     keywords: ['password generator', 'strong password', 'secure password'],
+  },
+  {
+    id: 'jwt-decoder',
+    name: 'JWT Decoder',
+    description: 'Decode and inspect JWT tokens. View header, payload, and claims. Runs entirely in your browser.',
+    href: '/jwt-decoder',
+    category: 'developer',
+    icon: 'KeyRound',
+    keywords: ['jwt decoder', 'jwt decode', 'json web token decoder'],
+  },
+  {
+    id: 'box-shadow-generator',
+    name: 'CSS Box Shadow Generator',
+    description: 'Create CSS box shadows visually with live preview and copy the code instantly.',
+    href: '/box-shadow-generator',
+    category: 'developer',
+    icon: 'Square',
+    keywords: ['box shadow generator', 'css box shadow', 'shadow generator'],
+  },
+  {
+    id: 'cron-expression-generator',
+    name: 'Cron Expression Generator',
+    description: 'Build cron expressions visually and see plain-English explanations. Includes next run times.',
+    href: '/cron-expression-generator',
+    category: 'developer',
+    icon: 'CalendarClock',
+    keywords: ['cron expression generator', 'cron generator', 'crontab generator'],
+  },
+  {
+    id: 'uuid-generator',
+    name: 'UUID Generator',
+    description: 'Generate random UUID v4 identifiers. Bulk generation, formatting options, copy all.',
+    href: '/uuid-generator',
+    category: 'developer',
+    icon: 'Fingerprint',
+    keywords: ['uuid generator', 'guid generator', 'uuid v4'],
+  },
+  {
+    id: 'hash-generator',
+    name: 'Hash Generator',
+    description: 'Generate SHA-1, SHA-256, SHA-384, and SHA-512 hashes from text. Private, runs in browser.',
+    href: '/hash-generator',
+    category: 'developer',
+    icon: 'Hash',
+    keywords: ['hash generator', 'sha256 generator', 'sha1 hash'],
+  },
+  {
+    id: 'diff-checker',
+    name: 'Text Diff Checker',
+    description: 'Compare two blocks of text and highlight differences line by line. Free diff tool.',
+    href: '/diff-checker',
+    category: 'developer',
+    icon: 'GitCompare',
+    keywords: ['diff checker', 'text compare', 'compare two files'],
+  },
+  {
+    id: 'markdown-to-html',
+    name: 'Markdown to HTML Converter',
+    description: 'Convert Markdown to clean HTML with live preview. Copy the HTML output. Free.',
+    href: '/markdown-to-html',
+    category: 'developer',
+    icon: 'FileCode',
+    keywords: ['markdown to html', 'markdown converter', 'md to html'],
   },
 
   // ── Utility ──────────────────────────────────────────────────────────────
   {
     id: 'qr-code-generator',
     name: 'QR Code Generator',
-    description:
-      'Create free QR codes for URLs, WiFi, email, and more. Download as PNG or SVG. No signup.',
+    description: 'Create free QR codes for URLs, WiFi, email, and more. Download as PNG or SVG. No signup.',
     href: '/qr-code-generator',
     category: 'utility',
     icon: 'QrCode',
@@ -182,8 +319,7 @@ export const TOOLS: Tool[] = [
   {
     id: 'word-counter',
     name: 'Word & Character Counter',
-    description:
-      'Count words, characters, sentences, and reading time. Works for essays, tweets, and content.',
+    description: 'Count words, characters, sentences, and reading time. Works for essays, tweets, and content.',
     href: '/word-counter',
     category: 'utility',
     icon: 'Type',
@@ -192,24 +328,139 @@ export const TOOLS: Tool[] = [
   {
     id: 'aspect-ratio-calculator',
     name: 'Aspect Ratio Calculator',
-    description:
-      'Calculate proportional dimensions for any aspect ratio. Perfect for images, video, and design.',
+    description: 'Calculate proportional dimensions for any aspect ratio. Perfect for images, video, and design.',
     href: '/aspect-ratio-calculator',
     category: 'utility',
     icon: 'Ratio',
     keywords: ['aspect ratio calculator', 'ratio calculator', 'image dimensions'],
+  },
+  {
+    id: 'age-calculator',
+    name: 'Age Calculator',
+    description: 'Calculate your exact age in years, months, and days. Includes next birthday countdown.',
+    href: '/age-calculator',
+    category: 'utility',
+    icon: 'Cake',
+    keywords: ['age calculator', 'how old am i', 'date of birth calculator'],
+  },
+  {
+    id: 'date-duration-calculator',
+    name: 'Date Duration Calculator',
+    description: 'Calculate days, weeks, and months between two dates. Includes business-days option.',
+    href: '/date-duration-calculator',
+    category: 'utility',
+    icon: 'CalendarDays',
+    keywords: ['date duration calculator', 'days between dates', 'date difference'],
+  },
+  {
+    id: 'unit-converter',
+    name: 'Unit Converter',
+    description: 'Convert length, weight, temperature, volume, area, speed, and data units. Free.',
+    href: '/unit-converter',
+    category: 'utility',
+    icon: 'ArrowLeftRight',
+    keywords: ['unit converter', 'metric to imperial', 'measurement converter'],
+  },
+  {
+    id: 'bmi-calculator',
+    name: 'BMI Calculator',
+    description: 'Calculate your Body Mass Index in metric or imperial units. Includes weight category.',
+    href: '/bmi-calculator',
+    category: 'utility',
+    icon: 'Activity',
+    keywords: ['bmi calculator', 'body mass index', 'bmi chart'],
+  },
+  {
+    id: 'tdee-calculator',
+    name: 'TDEE Calculator',
+    description: 'Calculate your Total Daily Energy Expenditure and daily calorie needs based on activity level.',
+    href: '/tdee-calculator',
+    category: 'utility',
+    icon: 'Flame',
+    keywords: ['tdee calculator', 'calorie calculator', 'maintenance calories'],
+  },
+  {
+    id: 'time-zone-converter',
+    name: 'Time Zone Converter',
+    description: 'Convert times between time zones and find the best meeting time. Uses native browser APIs.',
+    href: '/time-zone-converter',
+    category: 'utility',
+    icon: 'Globe',
+    keywords: ['time zone converter', 'world clock', 'time difference'],
+  },
+  {
+    id: 'decision-wheel',
+    name: 'Decision Wheel',
+    description: 'Add your options and spin the animated wheel to make a random decision. Fair and fun.',
+    href: '/decision-wheel',
+    category: 'utility',
+    icon: 'Dices',
+    keywords: ['decision wheel', 'spinner wheel', 'random picker wheel'],
+  },
+  {
+    id: 'percentage-calculator',
+    name: 'Percentage Calculator',
+    description: 'Calculate percentages, percentage change, and reverse percentage in 4 different modes.',
+    href: '/percentage-calculator',
+    category: 'utility',
+    icon: 'PercentCircle',
+    keywords: ['percentage calculator', 'percent calculator', 'percentage increase'],
+  },
+  {
+    id: 'random-number-generator',
+    name: 'Random Number Generator',
+    description: 'Generate random numbers within any range. Bulk generation, no duplicates option. Cryptographically fair.',
+    href: '/random-number-generator',
+    category: 'utility',
+    icon: 'Shuffle',
+    keywords: ['random number generator', 'number generator', 'random picker'],
   },
 
   // ── Student ──────────────────────────────────────────────────────────────
   {
     id: 'grade-calculator',
     name: 'Grade Calculator',
-    description:
-      'Calculate weighted course grades and find out what score you need on your final exam.',
+    description: 'Calculate weighted course grades and find out what score you need on your final exam.',
     href: '/grade-calculator',
     category: 'student',
     icon: 'GraduationCap',
     keywords: ['grade calculator', 'final grade calculator', 'weighted grade calculator'],
+  },
+  {
+    id: 'gpa-calculator',
+    name: 'GPA Calculator',
+    description: 'Calculate your GPA from course grades and credit hours. Standard 4.0 scale.',
+    href: '/gpa-calculator',
+    category: 'student',
+    icon: 'BookOpen',
+    keywords: ['gpa calculator', 'college gpa calculator', 'grade point average'],
+  },
+  {
+    id: 'citation-generator',
+    name: 'Citation Generator',
+    description: 'Generate citations in APA, MLA, and Chicago style for websites, books, and journal articles.',
+    href: '/citation-generator',
+    category: 'student',
+    icon: 'Quote',
+    keywords: ['citation generator', 'apa citation', 'mla citation generator'],
+  },
+  {
+    id: 'random-name-picker',
+    name: 'Random Name Picker',
+    description: 'Enter names and pick a random winner fairly. Great for giveaways, classrooms, and raffles.',
+    href: '/random-name-picker',
+    category: 'student',
+    icon: 'Users',
+    keywords: ['random name picker', 'random name generator', 'name wheel'],
+  },
+  {
+    id: 'pomodoro-timer',
+    name: 'Pomodoro Timer',
+    description: 'Focus timer with work and break intervals, audio cue, and progress ring. Boost productivity.',
+    href: '/pomodoro-timer',
+    category: 'student',
+    icon: 'Timer',
+    keywords: ['pomodoro timer', 'focus timer', 'study timer'],
   },
 ];
 
@@ -220,18 +471,11 @@ export function getToolById(id: string): Tool | undefined {
 export function getRelatedTools(currentId: string, count = 4): Tool[] {
   const current = TOOLS.find((t) => t.id === currentId);
   if (!current) return TOOLS.filter((t) => t.id !== currentId).slice(0, count);
-  // prefer same category
-  const sameCategory = TOOLS.filter(
-    (t) => t.id !== currentId && t.category === current.category
-  );
-  const others = TOOLS.filter(
-    (t) => t.id !== currentId && t.category !== current.category
-  );
+  const sameCategory = TOOLS.filter((t) => t.id !== currentId && t.category === current.category);
+  const others = TOOLS.filter((t) => t.id !== currentId && t.category !== current.category);
   return [...sameCategory, ...others].slice(0, count);
 }
 
-export function getToolsByCategory(
-  category: Tool['category']
-): Tool[] {
+export function getToolsByCategory(category: Tool['category']): Tool[] {
   return TOOLS.filter((t) => t.category === category);
 }

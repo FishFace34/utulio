@@ -59,8 +59,8 @@ export default function Footer() {
                 </li>
               ))}
               <li>
-                <Link href="/" className="text-sm font-medium text-zinc-900 underline underline-offset-2">
-                  View all 20 tools →
+                <Link href="/tools" className="text-sm font-medium text-zinc-900 underline underline-offset-2">
+                  View all 50 tools →
                 </Link>
               </li>
             </ul>
